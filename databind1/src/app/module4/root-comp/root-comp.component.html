@@ -1,0 +1,7 @@
+<h3>Sub Childs</h3>
+<p>Root Component</p>
+<label>Enter: </label>
+<input type="text" #display>
+<button type="submit" (click)='onClick(display.value)'>Click Here</button>
+
+<app-child1 [childMessage]="display.value" ></app-child1>

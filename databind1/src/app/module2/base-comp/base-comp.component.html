@@ -1,0 +1,9 @@
+<h3>
+Parent-Child
+</h3>
+<p>Parent component</p>
+<label>Enter: </label>
+<input type="text" #display>
+<button type="submit" (click)='onClick(display.value)'>Click Here</button>
+
+<app-der [childMessage]="display.value" ></app-der>
